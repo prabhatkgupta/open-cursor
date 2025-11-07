@@ -1,4 +1,4 @@
-### Demo of how to use the open-cursor
+### Demo of how to use the open-cursor locally
 
 <hr><br>
 
