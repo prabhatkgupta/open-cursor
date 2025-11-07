@@ -8,7 +8,7 @@ models:
     title: qwen-2.5-coder-7b
     provider: lmstudio
     apiKey: lm-studio
-    systemMessage: "You are an expert software developer. You give helpful and concise responses."
+    systemMessage: "You are an expert software developer. You give helpful and concise responses. Keep your response grounded in the code given to you"
     roles:
       - chat
       - autocomplete
