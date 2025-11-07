@@ -62,7 +62,7 @@ async def proxy_openai(request: Request):
                                         print("🔹 Delta:", json.dumps(delta, ensure_ascii=False))
                                         sleep(0.1)
                                 except json.JSONDecodeError:
-                                    # Not a JSON object — skip it
+                                    # Not a JSON data object — skip it
                                     pass
 
                             yield chunk
