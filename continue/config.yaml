@@ -1,0 +1,33 @@
+name: Local Assistant
+version: 1.0.0
+schema: v1
+models:
+  - apiBase: http://0.0.0.0:8000/v1
+    name: qwen-2.5-coder-7b
+    model: qwen2.5-coder-7b-instruct-mlx
+    title: qwen-2.5-coder-7b
+    provider: lmstudio
+    apiKey: lm-studio
+    systemMessage: "You are an expert software developer. You give helpful and concise responses."
+    roles:
+      - chat
+      - autocomplete
+    
+  # - apiBase: http://0.0.0.0:8000/v1
+  #   name: olympiccoder
+  #   model: olympiccoder-7b
+  #   title: olympiccoder-7b
+  #   provider: lmstudio
+  #   apiKey: lm-studio
+  #   systemMessage: "You are an expert software developer. You give helpful and concise responses."
+  #   roles:
+  #     - chat
+
+context:
+  - provider: code
+  - provider: docs
+  - provider: diff
+  - provider: terminal
+  - provider: problems
+  - provider: folder
+  - provider: codebase
